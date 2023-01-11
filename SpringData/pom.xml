@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>mx.com.gm</groupId>
-    <artifactId>HelloSpringThymeleafv2WObjects</artifactId>
+    <artifactId>SpringData</artifactId>
     <version>1.0</version>
-    <name>HelloSpringThymeleafv2WObjects</name>
+    <name>SpringData</name>
     <description>Hello World Spring Boot</description>
     <properties>
         <java.version>19</java.version>
@@ -41,6 +41,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
     </dependencies>
 

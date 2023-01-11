@@ -7,8 +7,6 @@
     </head>
     <body>
         <h1>Inicio</h1>
-        <p th:text="${saludar}"></p>
-        <p th:text="${saludo}"></p>
         <div th:if="${personas != null and !personas.empty}">
             <table border='1'>
                 <tr>
@@ -18,10 +16,10 @@
                     <th>Telefono</th>
                 </tr>
                 <tr th:each="persona : ${personas}">
-                    <td th:text="${persona.nombre}">Nombre</td>
-                    <td th:text="${persona.apellido}">Apellido</td>
-                    <td th:text="${persona.email}">email</td>>
-                    <td th:text="${persona.telefono}">telefono</td>
+                    <td th:text="${persona.nombre_Persona}">Nombre</td>
+                    <td th:text="${persona.apellido_Persona}">Apellido</td>
+                    <td th:text="${persona.email_Persona}">email</td>>
+                    <td th:text="${persona.telefono_Persona}">telefono</td>
                 </tr>
             </table>
         </div>
